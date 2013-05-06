@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Attack King Mojo !!</title>
+		
+		<link href="default.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" title="style1" />
+		
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="js/map.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jsapi.js"></script>
+		<script type="text/javascript" src="js/graphics.js"></script>
+		<script> 
+			$(document).ready(function(){
+			  $("#flip1").click(function(){
+				$("#chart_div").slideToggle("slow");
+			  });
+			});
+			$(document).ready(function(){
+			  $("#flip2").click(function(){
+				$("#chart_div2").slideToggle("slow");
+			  });
+			});
+			$(document).ready(function(){
+			  $("#flip3").click(function(){
+				$("#chart_div3").slideToggle("slow");
+			  });
+			});
+			$(document).ready(function(){
+			  $("#flip4").click(function(){
+				$("#chart_div4").slideToggle("slow");
+			  });
+			});
+			$(document).ready(function(){
+			  $("#flip5").click(function(){
+				$("#chart_div5").slideToggle("slow");
+			  });
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id ="header">
+			<div id ="backgroundheader">
+				<img src="images/8.png" width="100%" />
+			</div>
+		</div>
+			<table id="table-properties" align ="center" border="1" width="580" height="580">
+				<tr>
+					<td>
+						<div id="map-canvas"></div>
+					</td>
+				</tr>
+			</table>
+			
+			<div id="flip5">B. Punggol MRT (click me)</div>
+			<div id="chart_div5"></div>
+			<div id="flip3">C. Singapore Zoo (click me)</div>
+			<div id="chart_div3"></div>
+			<div id="flip1">D. Jurong Point MRT (click me)</div>
+			<div id="chart_div"></div>
+			<div id="flip4">E. Sentosa Cove (click me)</div>
+			<div id="chart_div4"></div>
+			<div id="flip2">F. Bedok MRT (click me)</div>
+			<div id="chart_div2"></div>
+			
+
+			<div id="directionsPanel">
+				<p>Total Distance: <span id="total"></span></p>
+			</div>
+	</body>
+</html>
